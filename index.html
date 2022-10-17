@@ -1,0 +1,53 @@
+<head>
+    <title>Using Flex</title>
+    
+    <style>
+        .menu{
+            display: none;
+
+        }
+        
+         body{
+            padding: 0px;
+            margin: 0px;
+            background-image: url(img.jpeg);
+            background-position: center;
+            background-size: cover;
+        }
+        a{text-decoration: rgb(255, 252, 252);
+        color: white;}
+        .header{
+            border: solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+
+        }
+        header:hover{
+            background-color: aliceblue;
+            border-radius: 3px;
+        }
+        .child{
+            color: white;
+            border: solid black;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            font-size: 30px;
+            flex-grow: 1;
+        }
+        #search{flex-grow: 4;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="child"><img src="./sam.png" width="150px" height="40px"></div>
+        <div class="child"><a href="">Home</a></div>
+        <div id="search" class="child"><input type="text"></div>
+        <div class="child"><a href="">EN-Eng</a></div>
+        <div class="child"><a href="">Hello user</a></div>
+        <div class="child"><a href="">Orders</a></div>
+        <div class="child"><a href="">Cart</a></div>
+    </div>
+</body>
+
